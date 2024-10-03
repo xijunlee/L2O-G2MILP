@@ -1,0 +1,6 @@
+name: nursescheduling
+num_train: 3
+
+rhs_type: int
+lhs_type: int
+obj_type: int

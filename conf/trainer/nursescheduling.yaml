@@ -1,0 +1,28 @@
+batch_size: 1
+batch_repeat_size: 1
+
+steps: 5000
+save_start: 500
+save_step: 500
+
+lr:
+  init: 0.001
+  anneal_step: 15
+  anneal_rate: 0.99
+
+grad_max_norm: 10.0
+weight_decay: 0.001
+
+beta:
+  cons:
+    mode: "sigmoid"
+    min: 0.0001
+    max: 0.001
+    warmup: 1000
+    anneal_period: 4000
+  var:
+    mode: "sigmoid"
+    min: 0.0001
+    max: 0.001
+    warmup: 1000
+    anneal_period: 4000
